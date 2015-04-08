@@ -108,7 +108,7 @@ public class Main extends JFrame{
 		JButton btnNewButton_1 = new JButton("Check");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(lives > 0){
+				if((lives > 0)^(lastLife)){
 					try{
 						lastLife = false;
 						char check = textField_1.getText().charAt(0);
